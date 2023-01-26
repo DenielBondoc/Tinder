@@ -13,7 +13,7 @@ body{
     max-width: 300px;
     margin: auto;
 
-    background: rgb(201, 201, 201);
+    background: rgba(201, 201, 201, 0.493);
     padding: 48px;
     border-radius: 16px;
 }
