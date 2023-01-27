@@ -17,11 +17,11 @@
             </mat-error>
         </mat-form-field>
     <div class="center margin-top">
-        <button mat-raised-button color="primary" type="submit">
+        <button class="loginbutton1" mat-raised-button color="primary" type="submit">
             Login
         </button>
     </div>
 
-        <span class="center margin-top">Don't have an account?<a class="sign-up-link" routerLink="sign-up">Sign Up!</a></span>
+        <span class="center margin-top">Don't have an account?<a class="sign-up-link" [routerLink]="['/sign-up']">Sign Up!</a></span>
     </form>
 </div>

@@ -17,7 +17,8 @@ import { HomeComponent } from './components/home/home.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
-import { HotToastModule } from '@ngneat/hot-toast'
+import { HotToastModule } from '@ngneat/hot-toast';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -44,7 +45,9 @@ import { HotToastModule } from '@ngneat/hot-toast'
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    HotToastModule.forRoot()
+    HotToastModule.forRoot(),
+    MatMenuModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

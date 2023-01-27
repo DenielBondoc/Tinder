@@ -1,11 +1,13 @@
-<mat-toolbar color="primary">
+<mat-toolbar>
   <h1 class="nav-title">
     Tinder
   </h1>
 
   <ng-container *ngIf="authService.currentUser$ | async as user; else loginButton">
-    <button mat-button (click)="logout()">Logout
-      <mat-icon>logout</mat-icon>
+    <button class="logbutton" mat-button [matMenuTriggerFor]="userMenu">
+      <mat-icon>account_circle</mat-icon>
+      {{user.displayName}}
+      <mat-icon>expand_more</mat-icon>
     </button>
 
   </ng-container>
@@ -22,3 +24,7 @@
 <div class="content">
   <router-outlet></router-outlet>
 </div>
+
+<mat-menu #userMenu="matMenu">
+  <button mat-menu-item (click)="logout()">Logout</button>
+</mat-menu>

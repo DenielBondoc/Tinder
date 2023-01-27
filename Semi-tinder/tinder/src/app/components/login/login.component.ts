@@ -40,7 +40,7 @@ export class LoginComponent {
 
     this.authService.login(email, password).pipe(
       this.toast.observe({
-         success: 'Logged in succesfylly',
+         success: 'Logged in succesfully',
          loading: 'Logging in...',
          error: 'There was an error'
       })
