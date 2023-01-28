@@ -3,7 +3,7 @@
     Tinder
   </h1>
 
-  <ng-container *ngIf="authService.currentUser$ | async as user; else loginButton">
+  <ng-container *ngIf="user$ | async as user; else loginButton">
     <button class="logbutton" mat-button [matMenuTriggerFor]="userMenu">
       <img class="profile-image-toolbar" width="30" height="30" [src]="user.photoURL ?? 'assets/male.jpeg'">
       {{user.displayName}}
