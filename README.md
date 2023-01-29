@@ -16,6 +16,6 @@ CO Activities
 - Likes you
 - etc.
 
-## Tech Stack
-- Angular
-- Firebase
+## Tech Stack(changed)
+- HTML,CSS,JS
+- SQL
