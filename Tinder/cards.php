@@ -1,3 +1,9 @@
+<?php
+
+@include 'config.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +26,13 @@
              <span class="button_top"><a href="logout.php">Logout</a>
              </span>
          </button>
-       </div> 
-       <div class="logbtn1">
          <button class="specBtn">
              <span class="button_top"><a href="cards.php">Reload</a>
              </span>
          </button>
        </div> 
+
+       
       
         <div class="tinder--cards">
           <div class="tinder--card">
@@ -149,6 +155,19 @@
             <h1>"Acting"</h1>
           </div>
         </div>
+        <div class="foot">
+          <p class="p1">PASS</p>
+
+
+          <div class="loader">
+              <span></span>
+          </div>
+
+
+
+          <p class="p2">LIKE</p>
+        </div>
+
       
         <div class="tinder--buttons">
           <button id="nope"><i class="fa fa-remove"></i></button>
@@ -157,6 +176,7 @@
       </div>
       <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
       <script src="./render.js"></script>
+      
 
 </body>
 </html>

@@ -1,9 +1,11 @@
 <?php
 @include 'config.php';
 
+
 if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $password = md5($_POST['password']);
+
 
     $sql = "SELECT * FROM user_form WHERE email='$email' AND password='$password'";
     $result = mysqli_query($conn, $sql);
@@ -15,6 +17,8 @@ if(isset($_POST['submit'])){
     }else{
         echo "<script>alert('email or password is wrong.')</script>";
     }
+
+
 }
 
 ?>
@@ -30,8 +34,10 @@ if(isset($_POST['submit'])){
     <title>Login form</title>
 </head>
 <body>
+    
     <div class="form-container">
         <form action="" method="post">
+            <button class="LoL">Semi-Tinder</button>
             <h3>Login now</h3>
             <?php
             if(isset($error)){
