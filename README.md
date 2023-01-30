@@ -17,5 +17,5 @@ CO Activities
 - etc.
 
 ## Tech Stack(changed)
-- HTML,CSS,JS
+- HTML,CSS,JS,PHP
 - SQL
