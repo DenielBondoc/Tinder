@@ -5,7 +5,7 @@ CO Activities
 - User Registration
 - Tinder Swipe (like-not like)
 
-## Delimitation
+## Limitation
 - User Profile
 - Match History
 - Girl/Boy
