@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 *, *:before, *:after {
@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #CCFBFE;
+  background: radial-gradient(rgb(177, 121, 121),rgb(100, 100, 165));
   overflow: hidden;
   font-family: sans-serif;
 }
@@ -72,9 +72,9 @@ body {
 .tinder--card {
   display: inline-block;
   width: 90vw;
-  max-width: 400px;
+  max-width: 500px;
   height: 70vh;
-  background: #d387ff;
+  background: #d9cfdf;
   padding-bottom: 40px;
   border-radius: 10px;
   overflow: hidden;
@@ -84,6 +84,12 @@ body {
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
+  background: rgba(0, 0, 0, 0.856);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(5, 5, 5, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .moving.tinder--card {
@@ -96,6 +102,8 @@ body {
 .tinder--card img {
   max-width: 100%;
   pointer-events: none;
+  margin-top: 50px;
+  border-radius: 30px;
 }
 
 .tinder--card h3 {
@@ -111,8 +119,12 @@ body {
   padding: 0 16px;
   pointer-events: none;
 }
+.tinder--card p, h3, h2, h1{
+  color: #FFFFFF;
+}
 
 .tinder--buttons {
+  display: flex;
   flex: 0 0 100px;
   text-align: center;
   padding-top: 20px;
@@ -127,7 +139,9 @@ body {
   display: inline-block;
   margin: 0 8px;
 }
-
+.button_top a{
+  color: black;
+}
 .tinder--buttons button:focus {
   outline: 0;
 }
@@ -176,9 +190,9 @@ body {
 .specBtn {
   /* Variables */
  --button_radius: 0.75em;
- --button_color: #e8e8e8;
+ --button_color:#B23B3B;
  --button_outline_color: #000000;
- font-size: 30px;
+ font-size: 1.2rem;
  font-weight: bold;
  border: none;
  border-radius: var(--button_radius);
@@ -220,7 +234,7 @@ body {
 
 .foot .p1{
   padding-right: 70px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #ff264a;
   font-weight: 600;
   font-size: 60px;
@@ -228,10 +242,13 @@ body {
 
 .foot .p2{
   padding-left: 70px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #69b324;
   font-weight: 600;
   font-size: 60px;
+}
+.button_top a{
+  color: #fff;
 }
 @media screen and (max-width: 857px) {
   .specBtn {
@@ -315,6 +332,12 @@ body {
   transform: rotate(-55deg);
   filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
 }
+.fa-heart:hover,.fa-remove:hover{
+  transform: scale(.9);
+}
+ .fa-remove{
+  color: crimson;
+ } 
 
 @keyframes radar81 {
   0% {
